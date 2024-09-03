@@ -42,3 +42,26 @@ def celcius_to_fahrenheit():
 
 result = celcius_to_fahrenheit()
 print(f"{result}F")
+
+# 4th way ----> Fahrenhit to Celcius
+
+n = eval(input("Enter temperature Farenheit:"))
+c = (n-32)*5/9
+# print(f"{c}C")
+# print(f"{c:.2f}C") # round to 2 decimal places
+print(c)
+
+# 5th way
+
+def fahrenheit_to_celcius(n):
+    return (n-32)*5/9
+result = fahrenheit_to_celcius(204.8)
+print(f"{result}C")
+
+# 6th way
+def celcius_to_fahrenheit():
+    n = eval(input("Enter temperature in celcius: "))
+    return (n-32)*5/9
+
+result = celcius_to_fahrenheit()
+print(f"{result}C")
